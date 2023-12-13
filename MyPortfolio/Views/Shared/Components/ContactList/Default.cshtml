@@ -1,0 +1,42 @@
+﻿@using EntityLayer.Concrete
+@model List<About>
+
+<div class="col-lg-4">
+    <div class="contact-info-card">
+        <h4 class="contact-title">Benimle iletişime geç</h4>
+        @foreach (var item in Model)
+        {
+            <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                    <i class="ti-mobile icon-md"></i>
+                </div>
+                <div class="col-10 ">
+                    <h6 class="d-inline">Telefon : <br> <span class="text-muted">@item.Phone</span></h6>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                    <i class="ti-map-alt icon-md"></i>
+                </div>
+                <div class="col-10">
+                    <h6 class="d-inline">Adres :<br> <span class="text-muted">@item.Address</span></h6>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-1 pt-1 mr-1">
+                    <i class="ti-envelope icon-md"></i>
+                </div>
+                <div class="col-10">
+                    <h6 class="d-inline">Email :<br> <span class="text-muted">@item.Email</span></h6>
+                </div>
+            </div>
+            <ul class="social-icons pt-4">
+                <li class="social-item"><a class="social-link text-dark" href="@item.LinkedinUrl"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="@item.TwitterUrl"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="@item.Email"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="@item.InstagramUrl"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-dark" href="@item.GithubUrl"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>
+            }
+    </div>
+</div>

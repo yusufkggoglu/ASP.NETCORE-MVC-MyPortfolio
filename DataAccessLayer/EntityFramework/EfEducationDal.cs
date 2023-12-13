@@ -12,8 +12,5 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfEducationDal : GenericRepository<Education>, IEducationDal
     {
-        public EfEducationDal(Context context) : base(context)
-        {
-        }
     }
 }

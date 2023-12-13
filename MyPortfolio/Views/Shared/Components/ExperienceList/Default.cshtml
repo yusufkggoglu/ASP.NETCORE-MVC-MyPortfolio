@@ -1,0 +1,23 @@
+﻿@using EntityLayer.Concrete
+@model List<Experience>
+
+
+<div class="col-md-6 col-lg-4">
+    <div class="card">
+        <div class="card-header">
+            <div class="mt-2">
+                <h4>Deneyim</h4>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="card-body">
+            @foreach ( var item in Model)
+            {
+            <h6 class="title text-danger">@item.Header</h6>
+                <P>@item.SubHeader</P>
+                <P class="subtitle">@item.Content</P>
+            <hr>
+            }
+        </div>
+    </div>
+</div>

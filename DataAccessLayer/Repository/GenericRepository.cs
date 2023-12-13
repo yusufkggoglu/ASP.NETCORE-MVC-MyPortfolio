@@ -10,37 +10,35 @@ namespace DataAccessLayer.Repository
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
-        protected readonly Context _context;
-
-        public GenericRepository(Context context)
-        {
-            _context = context;
-        }
-
         public void Create(T t)
         {
-            _context.Set<T>().Add(t);
-            _context.SaveChanges();
+            using var c = new Context();
+            c.Add(t);
+            c.SaveChanges();
         }
 
         public void Delete(T t)
         {
-            _context.Set<T>().Remove(t);
-            _context.SaveChanges();
+            using var c = new Context();
+            c.Remove(t);
+            c.SaveChanges();
         }
         public List<T> GetAll()
         {
-            return _context.Set<T>().ToList();
+            using var c = new Context();
+            return c.Set<T>().ToList();
         }
         public T GetById(int id)
         {
-           return _context.Set<T>().Find(id);
-           
+            using var c = new Context();
+            return c.Set<T>().Find(id);
+
         }
         public void Update(T t)
         {
-            _context.Set<T>().Update(t);
-            _context.SaveChanges();
+            using var c = new Context();
+            c.Update(t);
+            c.SaveChanges();
         }
     }
 }

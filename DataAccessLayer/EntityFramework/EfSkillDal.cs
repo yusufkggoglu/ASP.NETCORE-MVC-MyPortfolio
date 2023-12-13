@@ -12,8 +12,5 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfSkillDal : GenericRepository<Skill>, ISkillDal
     {
-        public EfSkillDal(Context context) : base(context)
-        {
-        }
     }
 }

@@ -12,8 +12,5 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfPortfolioDal : GenericRepository<Portfolio>, IPortfolioDal
     {
-        public EfPortfolioDal(Context context) : base(context)
-        {
-        }
     }
 }
