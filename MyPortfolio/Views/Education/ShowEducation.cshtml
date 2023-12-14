@@ -1,0 +1,30 @@
+﻿@model EntityLayer.Concrete.Education
+
+@{
+    ViewData["Title"] = "ShowEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Eğitim Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.EducationID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Okul</th>
+            <td>@Model.Header</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Bölüm</th>
+            <td>@Model.SubHeader</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Açıklama</th>
+            <td>@Model.Content</td>
+        </tr>
+    </table>
+</div>

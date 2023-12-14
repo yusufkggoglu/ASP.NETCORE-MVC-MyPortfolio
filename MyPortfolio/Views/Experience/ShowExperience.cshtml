@@ -1,0 +1,30 @@
+﻿@model EntityLayer.Concrete.Experience
+
+@{
+    ViewData["Title"] = "ShowExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Deneyim Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.ExperienceID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">İşyeri</th>
+            <td>@Model.Header</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Zaman</th>
+            <td>@Model.SubHeader</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Açıklama</th>
+            <td>@Model.Content</td>
+        </tr>
+    </table>
+</div>

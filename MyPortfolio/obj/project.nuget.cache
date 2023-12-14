@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "gAv4WlDt3Jq7kq01s3HPbRP+tkc69Q8vXqcimjE/eCKPSO5f7IJQ3Y2p5bQWozK9LoeSklRAhsg/d75vj+Ax9w==",
+  "dgSpecHash": "otXXBgiOauPquFZuNNEvB3bFA2F072Tju9mBe6+dviw9msLp9YYKOsI1mK8+ZPP9/uq6e5gXDmDPSFN5p/Yk2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\yusuf\\Desktop\\C#\\MyPortfolio\\MyPortfolio\\MyPortfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\yusuf\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\yusuf\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+    "C:\\Users\\yusuf\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

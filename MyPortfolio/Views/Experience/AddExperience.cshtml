@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "AddExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Deneyim Ekleme Formu</h3>
+    </div>
+    <form method="post">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="exampleInputEmail1">İşyeri</label>
+                <input type="text" class="form-control" name="Header" placeholder="Okul">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Açıklama</label>
+                <br />
+                <textarea rows="3" cols="100" name="Content"></textarea>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">Kaydet</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@await Html.PartialAsync("/Views/Admin/PartialHead.cshtml")
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        @await Html.PartialAsync("/Views/Admin/PartialNavbar.cshtml")
+        @await Html.PartialAsync("/Views/Admin/PartialSideBar.cshtml")
+
+        <div class="content-wrapper">
+            <!-- Content -->
+            @RenderBody()
+            <!-- /content -->
+        </div>
+
+        @await Html.PartialAsync("/Views/Admin/PartialFooter.cshtml")
+    </div>
+    @await Html.PartialAsync("/Views/Admin/PartialScript.cshtml")
+</body>
+</html>

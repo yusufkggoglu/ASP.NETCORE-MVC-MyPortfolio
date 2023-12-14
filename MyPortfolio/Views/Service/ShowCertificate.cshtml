@@ -1,0 +1,24 @@
+﻿@model EntityLayer.Concrete.Service
+@{
+    ViewData["Title"] = "ShowService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Sertifika Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.ServiceID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Sertifika Başlık</th>
+            <td>@Model.ServiceHeader</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Açıklama</th>
+            <td>@Model.ServiceContent</td>
+        </tr>
+    </table>
+</div>
