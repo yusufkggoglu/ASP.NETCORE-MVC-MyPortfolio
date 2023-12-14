@@ -1,0 +1,52 @@
+﻿@model EntityLayer.Concrete.Portfolio
+@{
+    ViewData["Title"] = "EditPortfolio";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Proje Düzenleme Formu</h3>
+    </div>
+    @using (Html.BeginForm("EditPortfolio", "Portfolio", FormMethod.Post))
+    {
+        @Html.HiddenFor(x => x.PortfolioID)
+        <div class="card-body">
+            <div class="form-group">
+                <label for="Proje Başlığı">Proje Başlık</label>
+                @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Title)
+            </div>
+            <div class="form-group">
+                <label for="Alınan Yer">Fotoğraf</label>
+                @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.ImageUrl)
+
+            </div>
+            <div class="form-group">
+                <label for="Açıklama">Açıklama</label>
+                @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Description)
+
+            </div>
+            <div class="form-group">
+                <label for="Durum">Durum</label>
+                @Html.DropDownListFor(x => x.Status,
+            new List<SelectListItem> {
+            new SelectListItem{ Value = "False", Text = "Hayır"},
+
+            new SelectListItem{ Value = "True", Text = "Evet"}
+            },new {@class ="form-group"})
+            </div>
+            @Html.ValidationMessageFor(x => x.Status)
+
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button class="btn btn-primary">Kaydet</button>
+        </div>
+    }
+</div>
+

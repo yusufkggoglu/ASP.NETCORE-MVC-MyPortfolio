@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\yusuf\Desktop\C#\MyPortfolio\MyPortfolio
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/About/AddAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQWRkQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/About/EditAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcRWRpdEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Admin/PartialFooter.cshtml]
@@ -94,6 +106,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Message/ShowMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTaG93TWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Portfolio/AddPortfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEFkZFBvcnRmb2xpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Portfolio/EditPortfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEVkaXRQb3J0Zm9saW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Portfolio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Portfolio/ShowPortfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXFNob3dQb3J0Zm9saW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yusuf/Desktop/C\#/MyPortfolio/MyPortfolio/Views/Service/AddCertificate.cshtml]

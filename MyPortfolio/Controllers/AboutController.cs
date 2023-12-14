@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyPortfolio.Controllers
@@ -22,8 +24,21 @@ namespace MyPortfolio.Controllers
         [HttpPost]
         public IActionResult AddAbout(About about)
         {
-            _aboutManager.TAdd(about);
-            return RedirectToAction("Index");
+            AboutValidator validator = new AboutValidator();
+            ValidationResult results = validator.Validate(about);
+            if (results.IsValid)
+            {
+                _aboutManager.TAdd(about);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
 
         public IActionResult DeleteAbout(int id)
@@ -42,9 +57,21 @@ namespace MyPortfolio.Controllers
         [HttpPost]
         public IActionResult EditAbout(About about)
         {
-            _aboutManager.TUpdate(about);
-
-            return RedirectToAction("Index");
+            AboutValidator validator = new AboutValidator();
+            ValidationResult results = validator.Validate(about);
+            if (results.IsValid)
+            {
+                _aboutManager.TUpdate(about);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in results.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
         public IActionResult ShowAbout(int id)
         {

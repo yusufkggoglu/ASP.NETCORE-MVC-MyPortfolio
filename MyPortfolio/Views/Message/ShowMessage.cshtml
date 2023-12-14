@@ -1,0 +1,38 @@
+﻿@model EntityLayer.Concrete.Message
+
+@{
+    ViewData["Title"] = "ShowMessage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Mesaj Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.MessageID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Email</th>
+            <td>@Model.Mail</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Ad Soyad</th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Mesaj</th>
+            <td>@Model.Content</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Tarih</th>
+            <td>@Model.Date</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Durum</th>
+            <td>@Model.Status</td>
+        </tr>
+    </table>
+</div>

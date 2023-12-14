@@ -1,0 +1,34 @@
+﻿@model EntityLayer.Concrete.Portfolio
+
+@{
+    ViewData["Title"] = "ShowPortfolio";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Proje Detay</h3>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th style="width: 30px">ID</th>
+            <td>@Model.PortfolioID</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">İşyeri</th>
+            <td>@Model.Title</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Zaman</th>
+            <td>@Model.Description</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Image</th>
+            <td>@Model.ImageUrl</td>
+        </tr>
+        <tr>
+            <th style="width: 30px">Durum</th>
+            <td>@Model.Status</td>
+        </tr>
+    </table>
+</div>

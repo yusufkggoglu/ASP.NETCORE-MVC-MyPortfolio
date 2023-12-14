@@ -1,0 +1,93 @@
+﻿@model EntityLayer.Concrete.About
+@{
+    ViewData["Title"] = "AddAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Hakkımda Ekleme Formu</h3>
+    </div>
+    @using (Html.BeginForm("AddAbout", "About", FormMethod.Post))
+    {
+        @Html.HiddenFor(x => x.AboutID)
+        <div class="card-body">
+            <div class="form-group">
+                <label for="x">Ad Soyad</label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Name)
+            </div>
+            <div class="form-group">
+                <label for="x">Role</label>
+                @Html.TextBoxFor(x => x.Introduction, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Introduction)
+
+            </div>
+            <div class="form-group">
+                <label for="x">Cv Url</label>
+                @Html.TextBoxFor(x => x.FileUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.FileUrl)
+            </div>
+            <div class="form-group">
+                <label for="x">Background Url</label>
+                @Html.TextBoxFor(x => x.BackgroundUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.BackgroundUrl)
+            </div>
+            <div class="form-group">
+                <label for="x">Hakkımda Başlık</label>
+                @Html.TextBoxFor(x => x.AboutHeader, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.AboutHeader)
+            </div>
+            <div class="form-group">
+                <label for="x">Hakkımda İçerik</label>
+                @Html.TextBoxFor(x => x.AboutContent, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.AboutContent)
+            </div>
+            <div class="form-group">
+                <label for="x">Email</label>
+                @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Email)
+            </div>
+            <div class="form-group">
+                <label for="x">Telefon</label>
+                @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Phone)
+            </div>
+            <div class="form-group">
+                <label for="x">Adres</label>
+                @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Address)
+            </div>
+            <div class="form-group">
+                <label for="x">Profil Fotoğrafı Url</label>
+                @Html.TextBoxFor(x => x.ProfileUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.ProfileUrl)
+            </div>
+            <div class="form-group">
+                <label for="x">Twitter Url</label>
+                @Html.TextBoxFor(x => x.TwitterUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.TwitterUrl)
+            </div>
+            <div class="form-group">
+                <label for="x">Instagram Url</label>
+                @Html.TextBoxFor(x => x.InstagramUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.InstagramUrl)
+            </div>
+            <div class="form-group">
+                <label for="x">Github Url</label>
+                @Html.TextBoxFor(x => x.GithubUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.GithubUrl)
+            </div>
+            <div class="form-group">
+                <label for="x">Linkedin Url</label>
+                @Html.TextBoxFor(x => x.LinkedinUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.LinkedinUrl)
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">Kaydet</button>
+        </div>
+    }
+</div>
+
