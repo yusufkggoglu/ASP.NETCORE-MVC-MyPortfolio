@@ -3,10 +3,12 @@ using BusinessLayer.ValidationRules;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyPortfolio.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class AboutController : Controller
     {
         AboutManager _aboutManager = new AboutManager(new EfAboutDal());

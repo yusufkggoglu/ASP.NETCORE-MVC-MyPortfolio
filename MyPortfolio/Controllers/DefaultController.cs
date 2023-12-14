@@ -1,14 +1,15 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyPortfolio.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         AboutManager aboutManager = new AboutManager(new EfAboutDal());
-
         public IActionResult Index()
         {
             return View();
