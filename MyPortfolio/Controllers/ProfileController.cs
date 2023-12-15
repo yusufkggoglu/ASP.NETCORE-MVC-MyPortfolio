@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MyPortfolio.Models;
 
 namespace MyPortfolio.Controllers
 {
@@ -14,11 +15,27 @@ namespace MyPortfolio.Controllers
         {
             _userManager = userManager;
         }
-
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
-            return View(values);
+            UserEditViewModel model = new UserEditViewModel();
+            model.Name =  values.Name;
+            model.Surname = values.Surname;
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Index(UserEditViewModel p)
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            user.Name = p.Name;
+            user.Surname = p.Surname;
+            var  result = await _userManager.UpdateAsync(user);
+            if(result.Succeeded)
+            {
+                return RedirectToAction("Index", "Admin");
+            }
+            return View();
         }
     }
 }

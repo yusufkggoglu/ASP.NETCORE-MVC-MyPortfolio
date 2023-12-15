@@ -1,4 +1,4 @@
-﻿@model EntityLayer.Concrete.User
+﻿@model MyPortfolio.Models.UserEditViewModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -12,12 +12,19 @@
         <div class="card-body">
             <div class="form-group">
                 <label for="exampleInputEmail1">Ad</label>
-                <input type="text" class="form-control" name="@Model.Name" value="@Model.Name" placeholder="Ad">
+                <input type="text" class="form-control" name="Name" value="@Model.Name" placeholder="Ad">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail1">Açıklama</label>
-                <br />
-                <textarea rows="3" cols="100" name="Content"></textarea>
+                <label for="exampleInputEmail1">Soyad</label>
+                <input type="text" class="form-control" name="Surname" value="@Model.Surname" placeholder="Soyad">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Şifre</label>
+                <input type="password" class="form-control" name="Password" value="@Model.Password" placeholder="Şifre">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Şifre Tekrar</label>
+                <input type="password" class="form-control" name="PasswordConfirm" value="" placeholder="Şifre">
             </div>
         </div>
         <div class="card-footer">
